@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  font-size: 52.5px;
+  background-color: rgb(170, 202, 233);
+  /* height: 100vh; 
+  scroll-behavior: smooth;
+}
+/*Nav Bar Styling*
+div.top-header {
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  /* padding:5px; 
+  justify-content: flex-end;
+  align-items: center;
+}*/
+div.nav-container {
+  padding: 5px;
+}
+/* Creating space between divs in top header */
+
+/* ----- 
+div.nav-container > a {
+  color: chocolate;
+  font-size: 2vw;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: "Lato", monospace;
+  /* margin-right:%; 
+  margin: 1vw;
+}
+
+.on-mouseover {
+  visibility: hidden;
+  width: 0%;
+  background: rgb(243, 243, 243);
+  height: 2px;
+  transition: width 1s, height 2s;
+}
+a:hover + div.on-mouseover {
+  visibility: visible;
+  width: 100%;
+  height: 3px;
+}
+
+/*Intro Flex-box*/
+/* About-me 
+.about-me {
+  margin: 0.5vw;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+h1.Greeting {
+  color: chocolate;
+  font-size: 5vw;
+}
+img {
+  height: 40vh;
+  width: 20vw;
+  border: 2px solid rgb(5, 5, 5);
+  border-radius: 100%;
+}
+div.intro > p {
+  color: rgb(246, 246, 246);
+  font-size: 0.5em;
+}
+/* Education timeLine */
+.education {
+  height: 100vh;
+  width: 100%;
+  font-size: 1.2vw;
+  color: rgb(12, 12, 11);
+  background: #21283a;
+}
+/* TimeLine */
+/* .time {
+  height: 80vh;
+  padding-top: 100px;
+} */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+p.branch,
+div.content > h2 {
+  color: rgb(236, 234, 232);
+  font-size: 1.5vw;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: rgb(240, 235, 235);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: 1;
+}
+.container {
+  height: 100%;
+  padding: 15px;
+  position: relative;
+  background-color: inherit;
+  padding: 10px 40px;
+  width: 50%;
+  margin-top: 50px;
+  border: 2px solid or;
+  /* background-color: rgb(77, 207, 240); */
+}
+
+/* Creating circle */
+.container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: rgb(228, 193, 37);
+  border: 4px solid #eff6f1;
+  top: 9px;
+  border-radius: 50%;
+  z-index: 12;
+}
+/* left placement */
+.left {
+  left: 0;
+}
+.right {
+  left: 50%;
+}
+.right::after {
+  left: -16px;
+}
+/* SKills -grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-gap: space-around;
+}
+.progress-bar {
+  border: 2px solid rgba(237, 238, 240, 0.966);
+  height: 20px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgb(170, 202, 233);
+  padding: 0.1px;
+}
+.progress {
+  background-color: rgb(5, 5, 5);
+  height: 15px;
+  border-radius: 20px;
+  width: 40%;
+}
+div.py {
+  border: 2px solid rgba(241, 240, 237, 0.966);
+  height: 20px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: rgb(170, 202, 233);
+}
+div.py > div {
+  background-color: rgb(214, 74, 22);
+  height: 15px;
+  border-radius: 20px;
+  width: 65%;
+}
+div.html > div {
+  background-color: rgb(93, 63, 53);
+  width: 80%;
+}
+div.sql > div {
+  background-color: rgb(236, 240, 24);
+  width: 85%;
+}
+div.git > div {
+  background-color: rgb(18, 153, 243);
+  width: 80%;
+}
+div.js > div {
+  background-color: rgb(214, 22, 54);
+  width: 60%;
+}
+div.react > div {
+  background-color: rgb(13, 245, 33);
+  width: 40%;
+}
+div.lan-name {
+  color: rgb(248, 245, 244);
+}
+/*Experience*/
+.exp-pro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  height: 100vh;
+  font-size: 10px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1f));
+  grid-template-rows: auto;
+}
+.projects > div {
+  height: 20vh;
+  width: 20vw;
+  /* border:2px solid rgb(250, 244, 244); */
+  align-self: center;
+  justify-self: center;
+  border-radius: 20px;
+  background-color: rgb(170, 202, 233);
+  box-shadow: 0px 1px 10px rgb(250, 225, 225);
+}
+.exp {
+  align-self: center;
+}
+.projects h3 {
+  text-align: center;
+  color: rgb(73, 13, 75);
+  font-size: 1vw;
+}
+.projects p {
+  margin-top: 20px;
+  font-size: 1vw;
+  margin-left: 1vw;
+}
+/* ---------------- */
+.contact-me {
+  height: 100vh;
+  background-color: brown;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.contact-me i {
+  font-size: 0.5em;
+}
+.contact-me div {
+  color: azure;
+}
+.contact-me i:hover {
+  color: black;
+}
