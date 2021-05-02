@@ -254,6 +254,11 @@ color: #161a23;
 {
     visibility: hidden;
 }
+.footer{
+    text-align: center;
+    background-color: #21283a;
+    color: #fff;
+}
 
 /*@media (max-width: 991px)
 {
