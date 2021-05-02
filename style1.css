@@ -150,6 +150,7 @@ div.content > h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  margin-left: 10vw;
   /*grid-gap: space-around;*/
 }
 .progress-bar {
@@ -174,29 +175,29 @@ div.py {
   background-color: rgb(170, 202, 233);
 }
 div.py > div {
-  background-color: rgb(214, 74, 22);
+  background-color: greenyellow;
   height: 15px;
   border-radius: 20px;
   width: 65%;
 }
 div.html > div {
-  background-color: rgb(93, 63, 53);
+  background-color: greenyellow;
   width: 80%;
 }
 div.sql > div {
-  background-color: rgb(236, 240, 24);
+  background-color: greenyellow;
   width: 85%;
 }
 div.git > div {
-  background-color: rgb(18, 153, 243);
+  background-color: greenyellow;
   width: 80%;
 }
 div.js > div {
-  background-color: rgb(214, 22, 54);
+  background-color: greenyellow;
   width: 60%;
 }
 div.react > div {
-  background-color: rgb(13, 245, 33);
+  background-color: greenyellow;
   width: 40%;
 }
 div.lan-name {

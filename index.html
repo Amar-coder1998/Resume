@@ -6,7 +6,6 @@
          <link rel="stylesheet" href="style.css">
          <link rel="stylesheet" href="style1.css">
          <link rel="stylesheet" href="recent.css">
-         <link rel="stylesheet" href="slideshow.css">
          <link rel="stylesheet" href="client.css">
          <title>Amar</title>
          <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,7 +15,6 @@
       src="https://kit.fontawesome.com/bf51e6ec9e.js"
       crossorigin="anonymous"></script>
     <script src="src.js" defer></script>
-    <script src="slide.js"></script>
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -32,6 +30,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     </head>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!--magic scroll-->
+    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+<script type="text/javascript" src="magicscroll/magicscroll.js"></script>
     <body>
         <section class="banner" id="Home">
             <header>
@@ -51,9 +52,12 @@
                 </div>
             </div>
         <u1 class="sci">
+          <li><a href="https://www.linkedin.com/in/gooty-amar-nath-617708147/"><img class="pic" src="./images/linkedin.png"></a></li>
+            <li><a href="https://github.com/Amar-coder1998?tab=repositories"><img class="pic" src="./images/github.png"></a></li>
             <li><a href="https://twitter.com/gootyamar"><img class="pic" src="./images/twitter.png"></a></li>
             <li><a href="https://www.facebook.com/gootyamarnath.reddy/"><img class="pic" src="./images/facebook.png"></a></li>
             <li><a href="https://www.instagram.com/gootyamarnath/"><img class="pic" src="./images/instagram.png"></a></li>
+            
         </u1>
 
         <u1 class="menu">
@@ -292,39 +296,136 @@
            <!---- <h3>My Projects</h3>-->
            <section>
            <div class="education" id="Pro">
-            <h1 style="color: white; text-align: center;margin-top: 100px;">Projects</h1>
-            
-              <!-- Full-width images with number text -->
-              <div class="mySlides">
-               <!-- <div class="numbertext">1 / 6</div>-->
-                  <img src="./images/smartwatch.png" style="width:75%">
+            <style>
+              * {box-sizing: border-box;}
+              body {font-family: Verdana, sans-serif;}
+              .mySlides {display: none;}
+              img {vertical-align: middle;}
+              
+              /* Slideshow container */
+              .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+              }
+              
+              /* Caption text */
+              .text {
+                color: yellowgreen;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+              }
+              
+              /* Number text (1/3 etc) */
+              .numbertext {
+                color: white;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+              }
+              
+              /* The dots/bullets/indicators */
+              .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+              }
+              
+              .active {
+                background-color: #717171;
+              }
+              
+              /* Fading animation */
+              .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+              }
+              
+              @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+              
+              @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+              
+              /* On smaller screens, decrease text size */
+              @media only screen and (max-width: 300px) {
+                .text {font-size: 11px}
+              }
+              </style>
+              </head>
+              <body>
+              
+                <div class="education" id="exp">
+                  <h1 style="color: white; text-align: center;margin-top: 30px;">Projects</h1>
+      
+              <div class="slideshow-container">
+              
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <div class="text">SmartWatch Showcase</div>
+                <img src="./images/smartwatch.png" style="width:100%">
               </div>
-            
-              <div class="mySlides">
-                <!--<div class="numbertext">2 / 6</div>-->
-                  <img src="./images/fingerprint.jpg" style="width:75%">
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <div class="text">Amazon Alternative</div>
+                <img src="./images/alternative.png" style="width:100%">
               </div>
-            
-              <div class="mySlides">
-               <!---- <div class="numbertext">3 / 6</div>-->
-                  <img src="./images/cost.png" style="width:75%">
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <div class="text">Lock The Door Using Fingerprint Sensor</div>
+                <img src="./images/fingerprint.jpg" style="width:100%">
               </div>
-            
-              <div class="mySlides">
-                <!--<div class="numbertext">4 / 6</div>-->
-                  <img src="./images/alternative.png" style="width:75%">
+              
               </div>
-            
-              <!-- Next and previous buttons--> 
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a> 
-            
-              <!-- Image text -->
-              <div class="caption-container">
-                <p id="caption"></p>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
               </div>
+              
+              <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 7000); // Change image every 5 seconds
+              }
+              </script>
+          
             
-              <!-- Thumbnail images -->
+              <!-- Thumbnail images
               <div class="row">
                 <div class="column">
                   <img class="demo cursor" src="./images/smartwatch.png" style="width:100%" onclick="currentSlide(1)" >
@@ -338,7 +439,7 @@
                 <div class="column">
                   <img class="demo cursor" src="./images/alternative.png" style="width:100%" onclick="currentSlide(4)">
                 </div>
-            </div>
+            </div>-->
           </section>
              <!--client----------------------------------->
 
@@ -440,4 +541,7 @@
             </script>
        
     </body>
+    <footer>
+      <p>&#169;Amarnath Reddy Gooty</p>
+      </footer>
 </html>
