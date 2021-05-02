@@ -12,7 +12,7 @@ body {
   /* height: 100vh; 
   scroll-behavior: smooth;
 }
-/*Nav Bar Styling*
+Nav Bar Styling
 div.top-header {
   display: flex;
   flex-direction: row;
@@ -21,10 +21,10 @@ div.top-header {
   /* padding:5px; 
   justify-content: flex-end;
   align-items: center;
-}*/
+}
 div.nav-container {
   padding: 5px;
-}
+}*/
 /* Creating space between divs in top header */
 
 /* ----- 
@@ -115,9 +115,9 @@ div.content > h2 {
   padding: 15px;
   position: relative;
   background-color: inherit;
-  padding: 10px 40px;
+  padding: 5px 40px;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 20px;
   border: 2px solid or;
   /* background-color: rgb(77, 207, 240); */
 }
@@ -129,7 +129,7 @@ div.content > h2 {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(228, 193, 37);
+  background-color: greenyellow;
   border: 4px solid #eff6f1;
   top: 9px;
   border-radius: 50%;
@@ -150,14 +150,14 @@ div.content > h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  grid-gap: space-around;
+  /*grid-gap: space-around;*/
 }
 .progress-bar {
   border: 2px solid rgba(237, 238, 240, 0.966);
   height: 20px;
   width: 80%;
   border-radius: 20px;
-  background-color: rgb(170, 202, 233);
+  background-color: #21283a;
   padding: 0.1px;
 }
 .progress {

@@ -33,12 +33,12 @@
     </head>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <body>
-        <section class="banner">
+        <section class="banner" id="Home">
             <header>
                 <a href="#" class="logo">Portfolio</a>
                 <div class="toggle"></div>
             </header>
-            <img src="./images/amar1.png" class="men">
+            <img src="./images/amar3.png" class="men" >
             <div class="content">
                 <div class="contentBx">
                     <h4>Hello,</h4>
@@ -58,20 +58,21 @@
 
         <u1 class="menu">
             <li><a href="#Home"> Home </a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#comments">Comments</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#ski">Skills</a></li>
+            <li><a href="#Pro">Projects</a></li>
+            <li><a href="#Rev">Reviews</a></li>
         </u1>
         
-      <!--  <img src="images/1.png" class="elements" data-speed="8">
+       <!----<img src="images/1.png" class="elements" data-speed="8">
         <img src="images/2.png" class="elements" data-speed="6">
         <img src="images/3.png" class="elements" data-speed="-10">
         <img src="images/4.png" class="elements" data-speed="-6"> -->
-        </section> 
+        </section>
         
         <div class="education" id="edu">
-            <h1 style="color: white; text-align: center;margin-top: 50px;">Education</h1>
+            <h1 style="color: white; text-align: center;margin-top: 30px;">Education</h1>
       
             <div class="timeline">
               <div
@@ -82,7 +83,12 @@
               >
                 <div class="container left">
                   <div class="content">
-                    <h2>Veltech Ranagarajan Dr.Sagunthala R&D Institute of Science and Technology</h2>
+                    
+                  <h2>Veltech Ranagarajan Dr.Sagunthala R&D Institute of Science and Technology</h2>
+                  <p class="branch">Computer Science</p>
+                  
+                     
+                    
                   </div>
                 </div>
               </div>
@@ -112,9 +118,59 @@
             </div>
         
       
-            <h1 style="text-align: center; color: azure;margin-top: 50px;">Skills</h1>
+            <div class="education" id="exp">
+              <h1 style="color: white; text-align: center;margin-top: 30px;">Experience</h1>
+        
+              <div class="timeline">
+                <div
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="1000"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="container left">
+                    <div class="content">
+                      
+                    <h2>AppsTek Information Services Pvt Ltd </h2>
+                    <p class="branch">January 2021 - Present</p>
+                    
+                       
+                      
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="100"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="container right">
+                    <div class="content">
+                      <p class="branch">July 2020 - Dec 2020</p>
+                      <h2>BEPEC Solutions Pvt Ltd</h2>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-left"
+                  data-aos-anchor="#example-anchor"
+                  data-aos-offset="1200"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="container left">
+                    <div class="content">
+                      <h2>AppsTek Information Services Pvt Ltd</h2>
+                      <p class="branch"> December 2019 - July 2020</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="ski"></div>
+            <h1 style="text-align: center; color: azure;margin-top: 10px;">Skills</h1>
       
-            <div class="skills">
+            <div class="skills" >
               <div data-aos="flip-left">
                 <div class="right-grid">
                   <div data-aos="fade-up" data-aos-duration="500">
@@ -234,8 +290,9 @@
             <div class="recent-heading" style="text-align: center; color: azure;margin-top: 50px;">
             <span>Projects</span>
            <!---- <h3>My Projects</h3>-->
-           <div class="education" id="edu">
-            <h1 style="color: white; text-align: center;margin-top: 50px;">Projects</h1>
+           <section>
+           <div class="education" id="Pro">
+            <h1 style="color: white; text-align: center;margin-top: 100px;">Projects</h1>
             
               <!-- Full-width images with number text -->
               <div class="mySlides">
@@ -258,9 +315,9 @@
                   <img src="./images/alternative.png" style="width:75%">
               </div>
             
-              <!-- Next and previous buttons 
+              <!-- Next and previous buttons--> 
               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+              <a class="next" onclick="plusSlides(1)">&#10095;</a> 
             
               <!-- Image text -->
               <div class="caption-container">
@@ -282,7 +339,7 @@
                   <img class="demo cursor" src="./images/alternative.png" style="width:100%" onclick="currentSlide(4)">
                 </div>
             </div>
-          </article>
+          </section>
              <!--client----------------------------------->
 
             <!--heading-------
@@ -290,7 +347,8 @@
                 <span>Comments</span><!-- Container for the image gallery -->
                 <!--<div class="container">-->
             <!--<h3>Lecturer's Say</h3> -->
-            <div class="education" id="edu">
+            <section>
+            <div class="education" id="Rev">
               <h1 style="color: white; text-align: center;margin-top: 50px;">Reviews</h1>
             <!--client-box-container--------------->
             <div class="c-box-container">
@@ -355,7 +413,7 @@
             </div>
             </div>
             </div>
-            
+          </section>
           <script>
             AOS.init();
           </script>
