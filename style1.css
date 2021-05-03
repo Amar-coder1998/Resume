@@ -154,11 +154,11 @@ div.content > h2 {
   /*grid-gap: space-around;*/
 }
 .progress-bar {
-  border: 2px solid rgba(237, 238, 240, 0.966);
+  border: 2px solid rgba(237, 238, 240,);
   height: 20px;
   width: 80%;
   border-radius: 20px;
-  background-color: #21283a;
+  background-color: #AACAE9;
   padding: 0.1px;
 }
 .progress {
