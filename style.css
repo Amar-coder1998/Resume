@@ -254,11 +254,10 @@ color: #161a23;
 {
     visibility: hidden;
 }
-.footer{
-    text-align: center;
-    background-color: #21283a;
-    color: #fff;
+body{
+    margin: 0;
 }
+
 
 /*@media (max-width: 991px)
 {

@@ -1,0 +1,25 @@
+/* Footer CSS */
+footer{
+    background: #21283a;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: yellowgreen;
+    margin: 0;
+  }
+  footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  footer .text span a{
+    font-weight: 500;
+    color: #FFF;
+  }
+  footer .text span a:hover{
+    text-decoration: underline;
+  }
+  footer .span
+  {
+      background-color: yellowgreen;
+  }
