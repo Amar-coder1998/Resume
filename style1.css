@@ -163,7 +163,7 @@ div.content > h2 {
 }
 .progress {
   background-color: rgb(5, 5, 5);
-  height: 15px;
+  height: 100%;
   border-radius: 20px;
   width: 40%;
 }
